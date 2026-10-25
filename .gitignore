@@ -9,6 +9,7 @@ coverage/
 .env
 .env.*
 !.env.example
+admin.txt
 
 # package manager and tooling caches
 .npm-cache/
