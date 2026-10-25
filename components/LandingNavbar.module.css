@@ -1,0 +1,211 @@
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  min-height: 76px;
+  padding: 0 clamp(24px,6.5vw,120px);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #fbfaf6f5;
+  border-bottom: 1px solid #e7e9e1;
+  backdrop-filter: blur(14px);
+}
+.brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+  color: #30362d;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -.65px;
+  line-height: 1.08;
+  white-space: nowrap;
+}
+.brandIcon {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dfe5d8;
+  border-radius: 10px;
+  background: #e9eee4;
+  color: #708169;
+  display: grid;
+  place-items: center;
+}
+.brandName>span {
+  color: #71836a;
+}
+.menuButton {
+  display: none;
+}
+.links {
+  position: static;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(22px,2.4vw,40px);
+  width: auto;
+  min-width: 0;
+  margin-left: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  white-space: nowrap;
+}
+.link {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 1px;
+  color: #60695b;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .1px;
+  white-space: nowrap;
+  transition: color .2s;
+}
+.link:not(.login)::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 100%;
+  bottom: 7px;
+  height: 1px;
+  background: #72836b;
+  transition: right .2s;
+}
+.link:not(.login):hover,.link:not(.login):focus-visible {
+  color: #43563e;
+}
+.link:not(.login):hover::after,.link:not(.login):focus-visible::after {
+  right: 1px;
+}
+.login {
+  margin-left: 5px;
+  padding-left: 28px;
+  border-left: 1px solid #e1e4da;
+  color: #4f6049;
+  font-weight: 600;
+}
+.register {
+  min-width: 158px;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid #5f7659;
+  border-radius: 8px;
+  background: linear-gradient(135deg,#6c8265,#536b4d);
+  color: #fff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 7px 16px #465b402b;
+  transition: transform .2s,box-shadow .2s,background .2s;
+}
+.register:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 9px 20px #465b4035;
+  background: linear-gradient(135deg,#627b5b,#4a6244);
+}
+.link:focus-visible,.register:focus-visible,.menuButton:focus-visible {
+  outline: 2px solid #8a9b80;
+  outline-offset: 3px;
+}
+@media(min-width:821px) and (max-width:1100px) {
+  .nav {
+    padding-inline: 28px;
+    gap: 20px;
+  }
+  .links {
+    gap: 18px;
+  }
+  .link {
+    font-size: 12px;
+  }
+  .login {
+    padding-left: 16px;
+  }
+  .register {
+    min-width: 132px;
+    min-height: 42px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+}
+@media(max-width:820px) {
+  .nav {
+    min-height: 68px;
+    padding: 0 20px;
+    gap: 16px;
+  }
+  .menuButton {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    flex: 0 0 auto;
+    place-items: center;
+    border: 1px solid #e1e5dc;
+    border-radius: 10px;
+    background: #fff;
+    color: #53664d;
+  }
+  .links {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 14px;
+    right: 14px;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    gap: 3px;
+    width: auto;
+    margin: 0;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #e7e9e1;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px #20271d24;
+    white-space: normal;
+  }
+  .open {
+    display: flex;
+  }
+  .link:not(.login) {
+    justify-content: flex-start;
+    min-height: 46px;
+    padding: 0 12px;
+    border: 0;
+    border-bottom: 1px solid #f0f1eb;
+    font-size: 14px;
+  }
+  .link:not(.login)::after {
+    display: none;
+  }
+  .login {
+    min-height: 46px;
+    margin: 0;
+    padding: 0 12px;
+    border: 0;
+    border-bottom: 1px solid #f0f1eb;
+  }
+  .register {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}

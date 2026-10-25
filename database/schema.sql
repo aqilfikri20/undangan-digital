@@ -1,0 +1,42 @@
+CREATE DATABASE IF NOT EXISTS undangyuk CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE undangyuk;
+
+CREATE TABLE IF NOT EXISTS users (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(190) NOT NULL,
+  password_hash VARCHAR(180) NOT NULL,
+  role ENUM('admin', 'user') NOT NULL DEFAULT 'user',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  UNIQUE KEY users_email_unique (email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS invitations (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  user_id BIGINT UNSIGNED NOT NULL,
+  slug VARCHAR(190) NOT NULL,
+  theme VARCHAR(60) NOT NULL DEFAULT '',
+  completed BOOLEAN NOT NULL DEFAULT FALSE,
+  wedding_data LONGTEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  UNIQUE KEY invitations_user_unique (user_id),
+  UNIQUE KEY invitations_slug_unique (slug),
+  CONSTRAINT invitations_user_fk FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  CONSTRAINT invitations_json_check CHECK (JSON_VALID(wedding_data))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS guest_messages (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  invitation_id BIGINT UNSIGNED NOT NULL,
+  guest_name VARCHAR(120) NOT NULL,
+  attendance VARCHAR(40) NOT NULL,
+  message TEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  KEY guest_messages_invitation_created (invitation_id, created_at),
+  CONSTRAINT guest_messages_invitation_fk FOREIGN KEY (invitation_id) REFERENCES invitations(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

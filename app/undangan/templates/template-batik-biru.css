@@ -1,0 +1,457 @@
+/* Blue batik invitation theme and its supplied artwork. */
+.invitation-page.invite-batik-blue {
+  --invite-accent: #e5c486;
+  --invite-deep: #f5e9d2;
+  --invite-paper: #0a1833;
+  --invite-soft: #101f3c;
+  --invite-ornament: #d8ad65;
+  background: #08152d;
+  color: #f5e9d2;
+}
+.invitation-page.invite-batik-blue .invitation-cover {
+  background-image: url('/background/cover-batik.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.invitation-page.invite-batik-blue .invitation-cover:after {
+  inset: 18px;
+  border: 1px solid #d9b66d9c;
+}
+.invitation-page.invite-batik-blue .invitation-cover-inner {
+  color: #fff7e8;
+  text-shadow: 0 2px 15px #02091dcc;
+}
+.invitation-page.invite-batik-blue .invitation-cover-inner h1 {
+  font-size: clamp(40px,6vw,76px);
+  color: #fff6e4;
+}
+.invitation-page.invite-batik-blue .invitation-cover-inner h1 i {
+  color: #e4c27e;
+}
+.invitation-page.invite-batik-blue .invitation-cover-inner>button {
+  border: 1px solid #e4c27e;
+  color: #fff4da;
+  background: #091630a8;
+  box-shadow: 0 8px 25px #02091d55;
+}
+.invitation-page.invite-batik-blue .invitation-cover-bottom, .invitation-page.invite-batik-blue .invitation-cover-back {
+  color: #f6e8c8;
+}
+.invitation-page.invite-batik-blue .invitation-cover-mark {
+  color: #e6c57f;
+}
+.invitation-page.invite-batik-blue .invitation-cover-rule {
+  background: #dfbd76;
+}
+.invitation-page.invite-batik-blue .invite-full-section {
+  color: #f4e8d2;
+  border-left: 1px solid #d2ac6655;
+  border-right: 1px solid #d2ac6655;
+}
+/* Use each supplied background on a full-height, narrow invitation panel. */
+.invitation-page.invite-batik-blue .invite-full-section {
+  width: 36vw;
+  height: 100vh;
+  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
+  max-height: none;
+  padding: clamp(42px,7vh,76px) clamp(22px,3vw,48px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0a1833;
+}
+.invitation-page.invite-batik-blue .invitation-greeting.invite-full-section {
+  height: 100vh;
+  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+@media(min-width:701px) and (max-width:1024px) {
+  .invitation-page.invite-batik-blue .invite-full-section {
+    width: 82vw;
+    height: 100vh;
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+    max-height: none;
+    padding: clamp(38px,6vh,64px) clamp(28px,5vw,52px);
+  }
+}
+@media(max-width:700px) {
+  .invitation-page.invite-batik-blue .invite-full-section, .invitation-page.invite-batik-blue .invitation-greeting.invite-full-section {
+    width: 94vw;
+    height: 100vh;
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+    max-height: none;
+    padding: 42px 22px;
+    overflow-y: auto;
+  }
+  .invitation-page.invite-batik-blue .invite-map-grid iframe {
+    height: 230px;
+  }
+}
+.invitation-page.invite-batik-blue .invitation-greeting h2, .invitation-page.invite-batik-blue .invitation-section-heading h2, .invitation-page.invite-batik-blue .invitation-couple-grid h3, .invitation-page.invite-batik-blue .invitation-event-card h3, .invitation-page.invite-batik-blue .story-chapter-card h3, .invitation-page.invite-batik-blue .invite-gift>h2 {
+  color: #f6e9cf;
+}
+.invitation-page.invite-batik-blue .invitation-section-heading>span, .invitation-page.invite-batik-blue .invitation-greeting .invitation-eyebrow, .invitation-page.invite-batik-blue .invitation-flourish, .invitation-page.invite-batik-blue .invitation-greeting-rule, .invitation-page.invite-batik-blue .invitation-cover-inner h1 i, .invitation-page.invite-batik-blue .invitation-couple-grid article>span, .invitation-page.invite-batik-blue .couple-ampersand, .invitation-page.invite-batik-blue .event-card-label, .invitation-page.invite-batik-blue .event-flower, .invitation-page.invite-batik-blue .invitation-event-card>strong svg, .invitation-page.invite-batik-blue .story-year, .invitation-page.invite-batik-blue .story-heart, .invitation-page.invite-batik-blue .invitation-story-signature, .invitation-page.invite-batik-blue .invite-gift>svg {
+  color: #e6c27b;
+}
+.invitation-page.invite-batik-blue .invitation-greeting-copy, .invitation-page.invite-batik-blue .invitation-section-heading>p, .invitation-page.invite-batik-blue .invitation-couple-grid article>p, .invitation-page.invite-batik-blue .invitation-event-card>strong, .invitation-page.invite-batik-blue .event-address, .invitation-page.invite-batik-blue .story-chapter-card p, .invitation-page.invite-batik-blue .invite-gift>p, .invitation-page.invite-batik-blue .gift-account>span, .invitation-page.invite-batik-blue .guest-messages article p {
+  color: #e5dbc8;
+}
+.invitation-page.invite-batik-blue .quran-arabic {
+  color: #f0d69a;
+}
+.invitation-page.invite-batik-blue .invitation-event-card, .invitation-page.invite-batik-blue .story-chapter-card, .invitation-page.invite-batik-blue .gift-account, .invitation-page.invite-batik-blue .guest-message-form, .invitation-page.invite-batik-blue .guest-messages article, .invitation-page.invite-batik-blue .invite-video-placeholder {
+  background: #091832db;
+  border: 1px solid #d3ad665e;
+  color: #f4e8d2;
+  box-shadow: 0 12px 30px #02081742;
+}
+.invitation-page.invite-batik-blue .invitation-event-card .event-place, .invitation-page.invite-batik-blue .invitation-event-card .event-address {
+  color: #e4dac8;
+}
+.invitation-page.invite-batik-blue .story-chapter-card h3, .invitation-page.invite-batik-blue .gift-account strong, .invitation-page.invite-batik-blue .gift-account b, .invitation-page.invite-batik-blue .guest-messages article>span {
+  color: #f2d99e;
+}
+.invitation-page.invite-batik-blue .invite-map-links a, .invitation-page.invite-batik-blue .gift-account button, .invitation-page.invite-batik-blue .guest-message-form button {
+  color: #f7e9cb;
+}
+.invitation-page.invite-batik-blue .invite-map-links a {
+  border-color: #d3ad665e;
+}
+.invitation-page.invite-batik-blue .invite-map-grid iframe {
+  border: 1px solid #d3ad665e;
+  box-shadow: 0 12px 30px #02081742;
+}
+.invitation-page.invite-batik-blue .invite-gallery-grid figure {
+  border: 1px solid #d3ad665e;
+  box-shadow: 0 8px 22px #02081750;
+}
+.invitation-page.invite-batik-blue .invite-video-placeholder {
+  color: #e6c27b;
+}
+.invitation-page.invite-batik-blue .guest-message-form label {
+  color: #e9d8b8;
+}
+.invitation-page.invite-batik-blue .guest-message-form input, .invitation-page.invite-batik-blue .guest-message-form select, .invitation-page.invite-batik-blue .guest-message-form textarea {
+  background: #101f3c;
+  color: #fff1d8;
+  border: 1px solid #c79c5a80;
+}
+.invitation-page.invite-batik-blue .guest-message-form input::placeholder, .invitation-page.invite-batik-blue .guest-message-form textarea::placeholder {
+  color: #a99c84;
+}
+.invitation-page.invite-batik-blue .invitation-footer {
+  background: #08152d;
+  color: #e5d4b2;
+  border-top: 1px solid #c69a524f;
+}
+.invitation-page.invite-batik-blue .invitation-footer a {
+  color: #f0cc82;
+}
+@media(max-width:700px) {
+  .invitation-page.invite-batik-blue .invitation-cover:after {
+    inset: 10px;
+  }
+  .invitation-page.invite-batik-blue .invite-full-section {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+/* Match the cover treatment and keep section artwork behind its content. */
+.invitation-page.invite-batik-blue .invite-full-section {
+  position: relative;
+  isolation: isolate;
+  background-color: #0a1833;
+  background-image: none!important;
+}
+.invitation-page.invite-batik-blue .invite-full-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.invitation-page.invite-batik-blue .invitation-content {
+  background-image: url('/background/background-section-batik.png');
+  background-position: center top;
+  background-size: 100vw 100vh;
+  background-repeat: repeat-y;
+  background-color: #08152d;
+}
+.invitation-page.invite-batik-blue .invite-full-section {
+  background-color: transparent;
+}
+.invitation-page.invite-batik-blue .invite-full-section::before {
+  background-image: url('/background/section-batik.jpg');
+}
+/* Refined invitation layout: roomy page scrolling, no scrollbars inside panels. */
+.invitation-page.invite-batik-blue {
+  width: 100%;
+  min-height: 100svh;
+  overflow: clip;
+  background: #08152d;
+}
+.invitation-page.invite-batik-blue .invitation-content {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0 auto;
+  overflow: visible;
+  background-image: url('/background/background-section-batik.png');
+  background-position: center top;
+  background-size: 100vw 100vh;
+  background-repeat: repeat-y;
+}
+.invitation-page.invite-batik-blue .invite-full-section, .invitation-page.invite-batik-blue .invitation-greeting.invite-full-section {
+  width: 36vw;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100svh;
+  max-height: none;
+  margin: 0 auto;
+  padding: clamp(48px,8vh,92px) clamp(24px,3vw,54px);
+  overflow: visible;
+  scroll-margin-top: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.invitation-page.invite-batik-blue .invite-full-section::before {
+  inset: 0;
+  background-image: url('/background/section-batik.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.invitation-page.invite-batik-blue .invitation-section-heading {
+  position: relative;
+  margin-bottom: clamp(12px,2vh,24px);
+}
+.invitation-page.invite-batik-blue .invitation-section-heading h2 {
+  font-size: clamp(23px,2.3vw,34px);
+  line-height: 1.2;
+}
+.invitation-page.invite-batik-blue .invitation-section-heading>p {
+  font-size: clamp(10px,.9vw,13px);
+}
+.invitation-page.invite-batik-blue .invitation-greeting-title {
+  font-size: clamp(17px,1.65vw,24px);
+  line-height: 1.55;
+}
+.invitation-page.invite-batik-blue .quran-arabic {
+  font-size: clamp(20px,2.2vw,32px);
+  line-height: 1.8;
+  margin: clamp(12px,2vh,24px) auto 8px;
+}
+.invitation-page.invite-batik-blue .invite-section-number {
+  margin: clamp(16px,3vh,32px) auto 0;
+}
+.invitation-page.invite-batik-blue .invitation-couple-grid {
+  width: min(100%,760px);
+  gap: clamp(15px,3vw,44px);
+  margin: clamp(15px,3vh,34px) auto;
+}
+.invitation-page.invite-batik-blue .invitation-couple-grid article {
+  min-width: 0;
+}
+.invitation-page.invite-batik-blue .couple-portrait {
+  position: relative;
+  width: clamp(94px,10vw,148px);
+  height: clamp(124px,14vw,190px);
+  margin-bottom: 13px;
+  overflow: hidden;
+  border: 2px solid #e3c27f;
+  border-radius: 48% 48% 8px 8px;
+  box-shadow: 0 12px 30px #02081770;
+}
+.invitation-page.invite-batik-blue .couple-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.invitation-page.invite-batik-blue .couple-portrait::after {
+  content: "";
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent,#071329a6);
+}
+.invitation-page.invite-batik-blue .couple-portrait>span {
+  position: absolute;
+  z-index: 1;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  color: #fff1d0;
+  font: italic 20px var(--font-serif);
+  text-shadow: 0 2px 8px #000;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.invitation-page.invite-batik-blue .couple-portrait:hover>span {
+  opacity: 1;
+}
+.invitation-page.invite-batik-blue .invitation-couple-grid h3 {
+  font-size: clamp(17px,1.7vw,24px);
+  line-height: 1.25;
+  text-align: center;
+}
+.invitation-page.invite-batik-blue .invitation-couple-grid article>p {
+  font-size: clamp(9px,.8vw,11px);
+  text-align: center;
+}
+.invitation-page.invite-batik-blue .invitation-event-grid {
+  width: 100%;
+  margin: clamp(14px,3vh,30px) auto;
+  gap: 14px;
+}
+.invitation-page.invite-batik-blue .invitation-event-card {
+  width: min(100%,420px);
+  min-height: 0;
+  padding: clamp(18px,2.5vw,30px);
+}
+.invitation-page.invite-batik-blue .invite-maps .invitation-section-heading {
+  margin-bottom: 10px;
+}
+.invitation-page.invite-batik-blue .invite-map-grid {
+  width: 100%;
+  gap: 12px;
+}
+.invitation-page.invite-batik-blue .invite-map-grid iframe {
+  height: clamp(180px,28vh,300px);
+}
+.invitation-page.invite-batik-blue .invite-map-links {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.invitation-page.invite-batik-blue .story-timeline {
+  width: 100%;
+  margin: clamp(12px,2vh,22px) auto;
+  padding-left: 30px;
+}
+.invitation-page.invite-batik-blue .story-chapter {
+  margin-bottom: clamp(12px,2vh,20px);
+}
+.invitation-page.invite-batik-blue .story-chapter-card {
+  padding: clamp(12px,1.5vw,20px);
+}
+.invitation-page.invite-batik-blue .story-chapter-card p {
+  font-size: clamp(10px,.95vw,13px);
+  line-height: 1.65;
+}
+.invitation-page.invite-batik-blue .invite-gallery-grid {
+  width: 100%;
+  margin: clamp(12px,2vh,22px) auto;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 8px;
+}
+.invitation-page.invite-batik-blue .invite-gallery-grid figure {
+  aspect-ratio: 1.15;
+}
+.invitation-page.invite-batik-blue .invite-video, .invitation-page.invite-batik-blue .invite-video-placeholder {
+  width: min(100%,560px);
+  max-height: 190px;
+  aspect-ratio: 16/7;
+}
+.invitation-page.invite-batik-blue .invite-gift>svg {
+  margin-bottom: 8px;
+}
+.invitation-page.invite-batik-blue .invite-gift>p {
+  font-size: clamp(12px,1.15vw,16px);
+  line-height: 1.6;
+}
+.invitation-page.invite-batik-blue .gift-account {
+  min-width: 0;
+  width: min(100%,420px);
+  padding: clamp(16px,2vw,25px);
+}
+.invitation-page.invite-batik-blue .gift-account b {
+  font-size: clamp(18px,2vw,25px);
+}
+.invitation-page.invite-batik-blue .guest-message-form {
+  width: 100%;
+  max-width: 520px;
+  margin: 16px auto 8px;
+  gap: 10px;
+}
+.invitation-page.invite-batik-blue .guest-message-form input, .invitation-page.invite-batik-blue .guest-message-form select, .invitation-page.invite-batik-blue .guest-message-form textarea {
+  padding: 10px 12px;
+}
+.invitation-page.invite-batik-blue .guest-message-form textarea {
+  resize: none;
+}
+.invitation-page.invite-batik-blue .guest-messages {
+  width: 100%;
+  max-height: none;
+  overflow: visible;
+}
+.invitation-page.invite-batik-blue .invitation-footer {
+  position: relative;
+}
+@media(min-width:701px) and (max-width:1100px) {
+  .invitation-page.invite-batik-blue .invite-full-section, .invitation-page.invite-batik-blue .invitation-greeting.invite-full-section {
+    width: 72vw;
+    padding: 50px 36px;
+  }
+  .invitation-page.invite-batik-blue .invite-map-grid {
+    grid-template-columns: 1fr;
+  }
+  .invitation-page.invite-batik-blue .invite-gallery-grid {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+  }
+}
+@media(max-width:700px) {
+  .invitation-page.invite-batik-blue .invitation-content {
+    width: 100%;
+  }
+  .invitation-page.invite-batik-blue .invite-full-section, .invitation-page.invite-batik-blue .invitation-greeting.invite-full-section {
+    width: 100%;
+    min-height: 100svh;
+    height: auto;
+    padding: 48px 22px;
+    gap: 8px;
+    scroll-margin-top: 58px;
+  }
+  .invitation-page.invite-batik-blue .invitation-section-heading h2 {
+    font-size: 26px;
+  }
+  .invitation-page.invite-batik-blue .invitation-couple-grid {
+    gap: 8px;
+  }
+  .invitation-page.invite-batik-blue .couple-portrait {
+    width: 88px;
+    height: 116px;
+  }
+  .invitation-page.invite-batik-blue .invitation-couple-grid h3 {
+    font-size: 16px;
+  }
+  .invitation-page.invite-batik-blue .invite-map-grid {
+    grid-template-columns: 1fr;
+  }
+  .invitation-page.invite-batik-blue .invite-map-grid iframe {
+    height: 210px;
+  }
+  .invitation-page.invite-batik-blue .invite-gallery-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 7px;
+  }
+  .invitation-page.invite-batik-blue .invite-gallery-grid figure {
+    aspect-ratio: 1.15;
+  }
+  .invitation-page.invite-batik-blue .invite-video, .invitation-page.invite-batik-blue .invite-video-placeholder {
+    max-height: none;
+    aspect-ratio: 16/8;
+  }
+}

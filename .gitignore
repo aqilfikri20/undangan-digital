@@ -1,0 +1,25 @@
+# dependencies and build output
+node_modules/
+.next/
+out/
+build/
+coverage/
+
+# local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# package manager and tooling caches
+.npm-cache/
+.turbo/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
